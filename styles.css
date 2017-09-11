@@ -1,0 +1,197 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #444;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+.user {
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 1%;
+}
+.user:hover {
+    border: 2px solid #444;
+    background: rgba(250, 150, 0, .4);
+}
+
+.avatar {
+    display: flex;
+
+    flex-grow: 1;
+    border-radius: 100%;
+
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+
+}
+
+.info {
+    font-size: 1rem;
+    padding-left: 2.5%;
+    margin-top: 5%;
+}
+
+.info span {
+    display: block;
+    padding-bottom: 2%;
+}
+
+.info .name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+}
+
+/*FLEX*/
+
+.users {
+    display: inline-flex;
+    flex-flow: row wrap;
+}
+
+.user {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+/*media queries*/
+
+@media (min-width: 900px) {
+    .user {
+        margin: 2% 1.5%;
+        width: 30%;
+    }
+    .modal-content {
+        width: 30%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .user {
+        margin: 2% 2.5%;
+        width: 45%;
+    }
+    .modal-content {
+        width: 50%;
+    }
+}
+
+@media (max-width: 599px) {
+    .user {
+        margin: 2% 2.5%;
+        width: 95%;
+    }
+    .modal-content {
+        width: 80%;
+    }
+}
+
+/* Modal Window Styles */
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal span {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Modal Content */
+
+.modal-content {
+    margin: auto;
+    margin-top: 5%;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 2%;
+}
+.birthday {
+    margin-bottom: 2rem;
+}
+
+.modal-avatar,
+.modal-image {
+    border-radius: 100%;
+}
+
+.modal-cell {
+    padding-top: 2rem;
+}
+
+.employee-modal-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hr {
+    margin: auto;
+    width: 80%; 
+    height: 1px; 
+    background: #bbb; 
+    overflow: hidden;
+    margin-bottom: 2rem;
+    
+}
+.modal-location {
+    margin-bottom: 2rem;
+    
+}
+/* The Close Button */
+
+.close {
+    display: block;
+    color: #444;
+    float: right;
+    padding: 2%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

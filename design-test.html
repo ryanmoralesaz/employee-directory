@@ -1,0 +1,136 @@
+<!DOCTIPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+        html {
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            color: #444;
+        }
+        h1 {
+            font-size: 1rem;
+        }
+        .user {
+            box-sizing: border-box;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            padding: 1%;
+            margin: 2% 2.5%;
+            width: 28%;
+        }
+        .user .avatar {
+            border-radius: 100%;
+        }
+        .avatar img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 100%;
+        }
+        .info {
+            font-size: .8rem;
+            padding-left: 2.5%;
+            margin-top: 5%;
+        }
+        .info span {
+            display: block;
+        }
+        .info .name {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #222;
+        }
+        /*FLEX*/
+        .users {
+            display: inline-flex;
+            flex-flow: row wrap;
+        }
+        .user {
+            display: inline-flex;
+        }
+        .user .avatar {
+            flex-grow: 1;
+        }
+        .info {
+            flex-grow: 3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>AWESOME STARTUP EMPLOYEE DIRECTORY</h1>
+    <!--first div-->
+    <div class="users">
+        <div class="user">
+            <div class="avatar">
+                <img src="icon.png" />
+            </div>
+            <div class="info">
+                <span class="name">First Last</span>
+                <span class="email">email@email.com</span>
+                <span class="location">Someplace, USA</span>
+            </div>
+        </div>
+        <!--second div-->
+        <div class="user">
+            <div class="avatar">
+                <img src="icon.png" />
+            </div>
+            <div class="info">
+                <span class="name">First Last</span>
+                <span class="email">email@email.com</span>
+                <span class="location">Someplace, USA</span>
+            </div>
+        </div>
+        <!--third div-->
+        <div class="user">
+            <div class="avatar">
+                <img src="icon.png" />
+            </div>
+            <div class="info">
+                <span class="name">First Last</span>
+                <span class="email">email@email.com</span>
+                <span class="location">Someplace, USA</span>
+            </div>
+        </div>
+        <!--first div-->
+        <div class="user">
+            <div class="avatar">
+                <img src="icon.png" />
+            </div>
+            <div class="info">
+                <span class="name">First Last</span>
+                <span class="email">email@email.com</span>
+                <span class="location">Someplace, USA</span>
+            </div>
+        </div>
+        <!--second div-->
+        <div class="user">
+            <div class="avatar">
+                <img src="icon.png" />
+            </div>
+            <div class="info">
+                <span class="name">First Last</span>
+                <span class="email">email@email.com</span>
+                <span class="location">Someplace, USA</span>
+            </div>
+        </div>
+        <!--third div-->
+        <div class="user">
+            <div class="avatar">
+                <img src="icon.png" />
+            </div>
+            <div class="info">
+                <span class="name">First Last</span>
+                <span class="email">email@email.com</span>
+                <span class="location">Someplace, USA</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
